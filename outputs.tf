@@ -2,6 +2,10 @@ output "id" {
   value       = local.enabled ? local.id : ""
   description = "Disambiguated ID string restricted to `id_length_limit` characters in total"
 }
+output "time" {
+  value =  local.enabled ? local.id : ""
+  description = "Nature, cast of the future"
+}
 
 output "id_full" {
   value       = local.enabled ? local.id_full : ""
